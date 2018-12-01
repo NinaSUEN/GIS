@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-
 public class uavgui extends JDialog {
     Boolean run = true;
     Geofence Fence = new Geofence();

@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class Geofence {
     static final String usr = "postgres";
     static final String pwd = "123";
-    public static String url = "jdbc:postgresql://127.0.0.1/postgres";
+    public static String url = "jdbc:postgresql://51.140.217.170/new_database";
     public static Statement stmt = null;
     public static String heading = null;
     public static String Longi = null;
@@ -23,8 +23,7 @@ public class Geofence {
         Statement stmt1 = null;
         Statement stmt2 = null;
         try {
-
-            url = "jdbc:postgresql://127.0.0.1/postgres";
+//            url = "jdbc:postgresql://51.140.217.170/postgis";
             c = DriverManager.getConnection(url, usr, pwd);
             System.out.println("Connection Success");
             stmt = c.createStatement();
@@ -169,7 +168,7 @@ public class Geofence {
             stmt = null;
             Double buffervalue = Double.valueOf(buffer);
             try {
-                url = "jdbc:postgresql://127.0.0.1/postgres";
+//                url = "jdbc:postgresql://127.0.0.1/postgres";
                 c = DriverManager.getConnection(url, usr, pwd);
                 System.out.println("Connection Success");
                 stmt = c.createStatement();
