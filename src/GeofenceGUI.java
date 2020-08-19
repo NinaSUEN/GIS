@@ -236,72 +236,7 @@ public class GeofenceGUI extends JDialog {
 
             }
         });
-//        loadSurroundingMapButton.addActionListener(new ActionListener() {
-//            /**
-//             * Invoked when an action occurs.
-//             *
-//             * @param e the event to be processed
-//             */
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                String Lat = latitudeTextField.getText();
-//                String Long = longitudeTextField.getText();
-//                Double latValue = Double.parseDouble(Lat);
-//                Double longValue = Double.parseDouble(Long);
-//                System.out.println("Selected Coordinate : " + Lat + "," + Long);
-//                try {
-//                    latValue = Double.parseDouble(Lat);
-//                    longValue = Double.parseDouble(Long);
-//                } catch (NumberFormatException e1) {
-//                    statusBarTextField.setText("please input numbers");
-//                    throw e1;
-//                }
-//                Double finalLatValue = latValue;
-//                Double finalLongValue = longValue;
-//                new Thread(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        if (finalLatValue > -90 && finalLatValue <90 && finalLongValue <(180) && finalLongValue > (-180)){
-//                            try {
-//                                System.out.println("Loading Map from Internet");
-//                                //To Use Google Map API, comment one of them.
-//                                // String imageURL= "http://map.google.com/staticmap?center="+Lat+","+Long+"&zoom=11&size=521x414&scale=2&maptype=roadtype";
-//
-//                                //To USE OpenStreetMap Static API
-//                                String imageURL = "http://staticmap.openstreetmap.de/staticmap.php?center=" + Lat + "," + Long + "&zoom=14&size=711x504";
-//
-//                                String destinationFile = "image.jpg";
-//                                String str = destinationFile;
-//                                URL url = new URL(imageURL);
-//                                InputStream is = url.openStream();
-//                                OutputStream os = new FileOutputStream(destinationFile);
-//
-//                                byte[] b = new byte[2048];
-//                                int length;
-//
-//                                while ((length = is.read(b)) != -1) {
-//                                    os.write(b, 0, length);
-//                                }
-//                                is.close();
-//                                os.close();
-//                                ImageIcon mapicon = new ImageIcon("image.jpg");
-//                                mapLabel.setIcon(mapicon);
-//                            } catch (IOException e1) {
-//                                e1.printStackTrace();
-//                                System.out.println("No Valid Internet connection or API key invalid");
-//                                statusBarTextField.setText("No Valid Internet connection or API key invalid, last used position loaded");
-//                                ImageIcon mapicon = new ImageIcon("image.jpg");
-//                                mapLabel.setIcon(mapicon);
-//                            }
-//
-//                        }
-//                        else{
-//                            statusBarTextField.setText("Input out of the range");
-//                        }
-//                    }
-//            }).start();
-//            }
-//        });
+
         bufferRaiousTextField.addMouseListener(new MouseAdapter() {
             /**
              * {@inheritDoc}
