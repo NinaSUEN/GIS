@@ -70,37 +70,8 @@ public class Geofence {
             fout.close();
             rs.close();
             stmt.close();
-//            rs1.next();
-//            File imageFile1 = new File("img1.png");
-//            fout1 = new FileOutputStream(imageFile1);
-//            fout1.write(rs1.getBytes("rast"));
-//            fout1.close();
-//            rs1.close();
-//            stmt1.close();
-//            rs2.next();
-//            File imagefile2 = new File("img2.png");
-//            fout2 = new FileOutputStream(imagefile2);
-//            fout2.write(rs2.getBytes("rast"));
-//            fout2.close();
-//            rs2.close();
-//            stmt2.close();
-            c.close();
 
-//            try {
-//                Image bottomImage = ImageIO.read(imageFile1);
-//                Image topImage = ImageIO.read(imagefile2);
-//                int w = ((BufferedImage) bottomImage).getWidth();
-//                int h = ((BufferedImage) bottomImage).getHeight();
-//                BufferedImage finalImage = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
-//                Graphics2D g = finalImage.createGraphics();
-//
-//                g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_ATOP, 0.1f));
-//                g.drawImage(topImage, 600, 480, null);
-//                g.dispose();
-//                ImageIO.write(finalImage, "png", new File("img.png"));
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
+            c.close();
 
 
         } catch (Exception e) {
